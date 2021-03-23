@@ -6,9 +6,11 @@ See schema.sql for the schema of the testdb used by PostgreSQL.
 Set up a database testdb with a table as per schema.sql with a user "testdb" and password
 "testdb".
 After cloning this repo, from within the project directory run:
+```
 git submodule init
 git submodule update
 stack run
+```
 
 # Benchmark results
 With an AMD FX-6300 CPU and librocksdb v6.17.3
@@ -16,6 +18,7 @@ We can see that RocksDB is actually slower than PostgreSQL when running in sync 
 In async it is much faster but that is not a fair comparison to PostgreSQL running in sync.
 
 PostgreSQL:
+```
 benchmark "get (keys dont exist)":
  (run 100.0x) OP/S: 5.1k, total time: 0.020s, 197.8µs per OP
 benchmark "getForUpdate (keys dont exist)":
@@ -98,3 +101,4 @@ benchmark "txnGetForUpdate 10 keys":
  (run 100.0x) OP/S: 56.9, total time: 1.756s, 17.6ms per OP
 benchmark "get and put 10 keys in a transaction":
  (run 100.0x) OP/S: 510.5, total time: 0.196s, 2.0ms per OP
+ ```
