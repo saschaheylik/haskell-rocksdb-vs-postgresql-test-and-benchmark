@@ -1,0 +1,12 @@
+# Ignore all temporary VIM files
+**.swp
+**.un~
+**.swo
+**.orig
+
+db/*
+txndb/*
+txndb2/*
+stack.yaml.lock
+.stack-work/*
+.halive

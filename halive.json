@@ -1,0 +1,15 @@
+{
+    "hcfgFileTypes": [
+        "hs",
+        "pd",
+        "frag",
+        "vert"
+    ],
+    "hcfgMainFilePath": "app/Main.hs",
+    "hcfgExtensions": [
+        "OverloadedStrings"
+    ],
+    "hcfgIncludeDirs": [
+        "src"
+    ]
+}

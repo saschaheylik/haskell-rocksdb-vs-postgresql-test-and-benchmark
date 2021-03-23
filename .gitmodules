@@ -1,0 +1,3 @@
+[submodule "rocksdb-haskell-jprupp"]
+	path = rocksdb-haskell-jprupp
+	url = https://github.com/saschaheylik/rocksdb-haskell.git
